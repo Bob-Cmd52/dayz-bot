@@ -6,8 +6,8 @@ import requests
 from aiogram import Bot, Dispatcher, types
 from aiogram.filters import Command
 
-TELEGRAM_TOKEN = os.getenv("8457388424:AAFjCZmfOhCiwLnQ8BRw-D42_y0kaEwGEcM")
-OPENROUTER_API_KEY = os.getenv("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")
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
+OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 
 logging.basicConfig(level=logging.INFO)
 
