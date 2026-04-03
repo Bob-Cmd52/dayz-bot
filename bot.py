@@ -66,3 +66,11 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+import threading
+from http.server import BaseHTTPRequestHandler, HTTPServer
+
+def run_server():
+    server = HTTPServer(("0.0.0.0", 10000), BaseHTTPRequestHandler)
+    server.serve_forever()
+
+threading.Thread(target=run_server, daemon=True).start()
